@@ -6,7 +6,7 @@
 </head>
 <body>
 <%
-    String url = "Jdbc:mysql://localhost:3306/macrohard?";
+    String url = "Jdbc:mysql://localhost:3306/macrohard?useSSL=false&serverTimezone=UTC";
     String usr = "root";
     String pwd = "galland990531";
 
@@ -43,7 +43,6 @@
             e.printStackTrace();
         }
     }
-
 %>
 </body>
 </html>
