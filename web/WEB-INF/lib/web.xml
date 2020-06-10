@@ -6,7 +6,23 @@
     <display-name>
         Macrohard
     </display-name>
+
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+
+    <jsp-config>
+
+        <taglib>
+            <taglib-uri>/corelib</taglib-uri>
+            <taglib-location>/WEB-INF/c.tld</taglib-location>
+        </taglib>
+
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/sql</taglib-uri>
+            <taglib-location>/WEB-INF/sql.tld</taglib-location>
+        </taglib>
+
+    </jsp-config>
+
 </web-app>

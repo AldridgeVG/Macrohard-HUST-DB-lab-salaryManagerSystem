@@ -1,10 +1,15 @@
 package DAO;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class testQueryDao {
 
-    public static void mai(String[] args) {
+    public static List<String> query() {
+
+        List<String> ret = new ArrayList();
+
         String url = "Jdbc:mysql://localhost:3306/macrohard?useSSL=false&serverTimezone=UTC";
         String usr = "root";
         String pwd = "galland990531";
@@ -22,8 +27,9 @@ public class testQueryDao {
 
             rs = stmt.executeQuery(sql);
             while (rs.next()) {
-                String tmp = rs.getString("mvalue");
-                System.out.print(tmp + ", ");
+                ret.add(rs.getString("mvalue"));
+                //String tmp = rs.getString("mvalue");
+                //System.out.print(tmp + ", ");
             }
 
         } catch (
@@ -44,5 +50,6 @@ public class testQueryDao {
                 e.printStackTrace();
             }
         }
+        return ret;
     }
 }
