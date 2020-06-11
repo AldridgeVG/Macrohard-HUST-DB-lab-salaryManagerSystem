@@ -7,14 +7,15 @@
     <title>Insert title here</title>
 </head>
 <body>
-<form action="check2.jsp" method="post">
-    用户名：<input type="text" name="username"/><br/>
-    密 码：<input type="text" name="password"/><br/>
-    <input type="submit" value="登录"/>
+
+<form action="checkLogin.jsp" method="post">
+    USERNAME：<input type="text" name="username"/><br/>
+    PASSWORD：<input type="text" name="password"/><br/>
+    <input type="submit" value="LOG IN!"/>
 </form>
 
-<form action="../index2.jsp" method="post">
-    <input type="submit" value="返回"/>
+<form action="../surface.jsp" method="post">
+    <input type="submit" value="RETURN TO HOMEPAGE"/>
 </form>
 
 </body>

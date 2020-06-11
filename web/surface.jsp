@@ -5,11 +5,14 @@
     <title>$Macrohard$</title>
 </head>
 <body>
+
 <form action="REGISTER/register.jsp" method="post">
     <input type="submit" value="REGISTER NOW!"/>
 </form>
+
 <form action="LOGIN/login.jsp" method="post">
     <input type="submit" value="LOG IN!"/>
 </form>
+
 </body>
 </html>
